@@ -1,6 +1,6 @@
 /* ==========================================================
-   Yaosheng Technology (Hong Kong) Co., Ltd. - 官网样式
-   深蓝 + 白 主色调 | 商务科技感 | 响应式
+   Yaosheng Technology (Hong Kong) Co., Ltd. - Website Styles
+   Deep blue + white theme | Business-tech style | Responsive
    ========================================================== */
 
 :root {
@@ -37,7 +37,7 @@ ul { list-style: none; }
   margin: 0 auto;
 }
 
-/* ---------- 页头导航 ---------- */
+/* ---------- Header Navigation ---------- */
 .site-header {
   position: sticky;
   top: 0;
@@ -88,7 +88,7 @@ ul { list-style: none; }
   border-radius: 2px;
 }
 
-/* ---------- 首屏 Banner ---------- */
+/* ---------- Hero Banner ---------- */
 .hero {
   background: linear-gradient(135deg, #0a2540 0%, #13406d 55%, #1f7ae0 100%);
   color: var(--white);
@@ -140,7 +140,7 @@ ul { list-style: none; }
   box-shadow: 0 10px 28px rgba(31, 122, 224, 0.45);
 }
 
-/* ---------- 通用区块 ---------- */
+/* ---------- Common Sections ---------- */
 .section { padding: 80px 0; }
 
 .section-alt { background: var(--gray-100); }
@@ -170,7 +170,7 @@ ul { list-style: none; }
   text-transform: uppercase;
 }
 
-/* ---------- 关于我们 ---------- */
+/* ---------- About Us ---------- */
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -224,7 +224,7 @@ ul { list-style: none; }
   line-height: 1.8;
 }
 
-/* ---------- 产品品类 ---------- */
+/* ---------- Product Categories ---------- */
 .category-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -285,7 +285,7 @@ ul { list-style: none; }
   border-radius: 999px;
 }
 
-/* ---------- 产品图册 ---------- */
+/* ---------- Product Gallery ---------- */
 .gallery-section { padding-top: 0; }
 
 .gallery-grid {
@@ -328,7 +328,7 @@ ul { list-style: none; }
   margin-top: 4px;
 }
 
-/* ---------- 品牌墙 ---------- */
+/* ---------- Brand Wall ---------- */
 .brand-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -355,7 +355,7 @@ ul { list-style: none; }
   transform: translateY(-3px);
 }
 
-/* ---------- 联系方式 ---------- */
+/* ---------- Contact Us ---------- */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -409,7 +409,7 @@ ul { list-style: none; }
   font-size: 15px;
 }
 
-/* ---------- 页脚 ---------- */
+/* ---------- Footer ---------- */
 .site-footer {
   background: var(--primary);
   color: rgba(255, 255, 255, 0.75);
@@ -436,7 +436,7 @@ ul { list-style: none; }
   font-size: 13px;
 }
 
-/* ---------- 响应式 ---------- */
+/* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .about-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
