@@ -1,13 +1,13 @@
 /* ==========================================================
-   Yaosheng Technology 官网 - 交互脚本
-   1. 移动端导航开关
-   2. 平滑锚点滚动（兼容不支持 scroll-behavior 的浏览器）
+   Yaosheng Technology Website - Interaction Script
+   1. Mobile nav toggle
+   2. Smooth anchor scrolling (fallback for browsers without scroll-behavior)
    ========================================================== */
 
 (function () {
   'use strict';
 
-  // ---------- 移动端导航开关 ----------
+  // ---------- Mobile nav toggle ----------
   var navToggle = document.getElementById('navToggle');
   var navLinks = document.getElementById('navLinks');
 
@@ -16,7 +16,7 @@
       navLinks.classList.toggle('open');
     });
 
-    // 点击导航项后自动收起菜单（移动端体验）
+    // Auto-close menu after clicking a nav item (mobile UX)
     navLinks.addEventListener('click', function (e) {
       if (e.target.tagName === 'A') {
         navLinks.classList.remove('open');
@@ -24,7 +24,7 @@
     });
   }
 
-  // ---------- 锚点平滑滚动（降级方案） ----------
+  // ---------- Smooth anchor scrolling (fallback) ----------
   if (!('scrollBehavior' in document.documentElement.style)) {
     var anchors = document.querySelectorAll('a[href^="#"]');
     Array.prototype.forEach.call(anchors, function (anchor) {
