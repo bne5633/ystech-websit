@@ -437,7 +437,6 @@ ul { list-style: none; }
   font-size: 13px;
 }
 
-
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .about-grid { grid-template-columns: 1fr; }
