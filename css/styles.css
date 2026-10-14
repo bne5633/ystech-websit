@@ -394,9 +394,10 @@ ul { list-style: none; }
 }
 
 .placeholder .todo {
-  color: #b0bcc8;
+  display: block;
+  color: var(--gray-600);
   font-size: 13px;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 .contact-note {
@@ -436,6 +437,7 @@ ul { list-style: none; }
   font-size: 13px;
 }
 
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .about-grid { grid-template-columns: 1fr; }
@@ -472,4 +474,150 @@ ul { list-style: none; }
   .section-head h2 { font-size: 26px; }
   .stats-row { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ---------- Competitive Advantages ---------- */
+.advantage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.advantage-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 30px 26px;
+  border-top: 4px solid var(--accent);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.advantage-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 34px rgba(10, 37, 64, 0.14);
+}
+
+.adv-num {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.advantage-card h3 {
+  font-size: 20px;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.advantage-card ul li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 14px;
+  color: var(--gray-600);
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.advantage-card ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* ---------- Authorized & Distribution Product Lines ---------- */
+.line-block {
+  margin-top: 48px;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.line-block h3 {
+  font-size: 20px;
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.line-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 14px 28px;
+}
+
+.line-item {
+  border-bottom: 1px dashed var(--gray-200);
+  padding: 8px 0;
+}
+
+.line-item strong {
+  display: block;
+  color: var(--primary);
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+.line-item span {
+  color: var(--gray-600);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* ---------- Applications ---------- */
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.app-card {
+  background: linear-gradient(135deg, #0a2540, #13406d);
+  color: rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.app-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(10, 37, 64, 0.22);
+}
+
+/* ---------- Brand Logo Cards ---------- */
+.brand-card.brand-logo {
+  padding: 8px;
+}
+
+.brand-card.brand-logo img {
+  max-height: 52px;
+  max-width: 85%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.brand-note {
+  margin-top: 24px;
+  text-align: center;
+  background: var(--accent-soft);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  color: var(--primary-light);
+  font-size: 14px;
+}
+
+/* ---------- Responsive (new blocks) ---------- */
+@media (max-width: 900px) {
+  .advantage-grid { grid-template-columns: 1fr; }
+  .line-grid { grid-template-columns: 1fr; }
 }
