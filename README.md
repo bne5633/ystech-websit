@@ -2,73 +2,60 @@
 AIGC:
     Label: "1"
     ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: 46ff36b6d0847234dfdf55f5d6e0b0cc_6d8efe57c7b111f1b5a6525400393706
-    ReservedCode1: J0Kx8yYMdhVzH1+rC4mFIUfwUeiNG9Tnvar77k0fjQC0FE/cfcqqaoF8T1soej/oYhS2cRUbrYLGSuwkJdJL8/CEsazEneGx8L/ns9WWXHiTBP4c/xnKotIHNWtGYtXhXh8ELt8zmomvJUJdEqzq3sFU7MlrunaaugHlRaCc2BbZ0qC1DwcBWgKVH9Y=
+    ProduceID: 46ff36b6d0847234dfdf55f5d6e0b0cc_cf40ff70c84e11f18b7f525400393706
+    ReservedCode1: DIG25A15aIYgELYF7dV5KqIGaiIbQrN6xQWl8CX4AoVTvno7bJ1tbpM5kP5OuqTY3A7/E04nMefRFPGQv3LGtxeMrJMHVeFADJdn5Nw0pF5Ow5mxEMNnI75dwNnIKrw/cUdDveGwJ7IyQFSkYC3DLu5qyckfNtE/IG+yYdII+/WdqLlBnAIX2NzVqfA=
     ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: 46ff36b6d0847234dfdf55f5d6e0b0cc_6d8efe57c7b111f1b5a6525400393706
-    ReservedCode2: J0Kx8yYMdhVzH1+rC4mFIUfwUeiNG9Tnvar77k0fjQC0FE/cfcqqaoF8T1soej/oYhS2cRUbrYLGSuwkJdJL8/CEsazEneGx8L/ns9WWXHiTBP4c/xnKotIHNWtGYtXhXh8ELt8zmomvJUJdEqzq3sFU7MlrunaaugHlRaCc2BbZ0qC1DwcBWgKVH9Y=
+    PropagateID: 46ff36b6d0847234dfdf55f5d6e0b0cc_cf40ff70c84e11f18b7f525400393706
+    ReservedCode2: DIG25A15aIYgELYF7dV5KqIGaiIbQrN6xQWl8CX4AoVTvno7bJ1tbpM5kP5OuqTY3A7/E04nMefRFPGQv3LGtxeMrJMHVeFADJdn5Nw0pF5Ow5mxEMNnI75dwNnIKrw/cUdDveGwJ7IyQFSkYC3DLu5qyckfNtE/IG+yYdII+/WdqLlBnAIX2NzVqfA=
 ---
 
----
-AIGC:
-    Label: "1"
-    ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: 46ff36b6d0847234dfdf55f5d6e0b0cc_f12cd25ac73f11f197b3525400248c00
-    ReservedCode1: UnrocZZGYyIMnQeqznSUkHzjnazf+j6NMiqP3TU267FryO/VUgNuvsmAuLFNOZ0a1XPZe0WcwpTNvdRCEfWNG5oBOCBYmYYYvVePSVL31HnYGd9tUbMbaKrwa38XHOCPBb9QBd8YniYxqs6+o6CgaskgDp8Yet9jG83BI2UTjB4WckUwmWvaSanN5nE=
-    ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: 46ff36b6d0847234dfdf55f5d6e0b0cc_f12cd25ac73f11f197b3525400248c00
-    ReservedCode2: UnrocZZGYyIMnQeqznSUkHzjnazf+j6NMiqP3TU267FryO/VUgNuvsmAuLFNOZ0a1XPZe0WcwpTNvdRCEfWNG5oBOCBYmYYYvVePSVL31HnYGd9tUbMbaKrwa38XHOCPBb9QBd8YniYxqs6+o6CgaskgDp8Yet9jG83BI2UTjB4WckUwmWvaSanN5nE=
----
+# Yaosheng Technology (Hong Kong) — Official Website (Local Build)
 
-# Yaosheng Technology (Hong Kong) Co., Ltd. - Official Website
+**Site:** www.ystech-hk.com (local working copy, English-first with built-in Chinese switch)
 
-A pure static product website (HTML / CSS / JS). No backend required. Ready to deploy on any static hosting platform.
+## Overview
+Single-page marketing website for Yaosheng Technology (Hong Kong) Co., Limited,
+an authorized distributor of RF & microwave components, semiconductors, connectors,
+sensors, relays and passive components.
 
-## File Structure
+- **Founded:** August 2010 | **Capital:** RMB 5,000,000 | **Team:** 13
+- **Chairman:** Mr. Li Bin
+- **Offices:** Hong Kong (HQ) + Shenzhen (operation)
+- **Contact:** +86-755-33259928 | +86-755-33259926 (fax) | sales@ystech-hk.com
+- **Authorized brands:** Dalicap, Renesas, ST, TI, NXP, SPSEMI, Murata, TDK
 
+## Project Structure
 ```
 ystech-websit/
-├── index.html          # Home page (single-page scroll: Banner + About + Advantages + Products + Gallery + Applications + Brands + Contact)
+├── index.html            # Main page (SEO meta, JSON-LD, i18n, all sections)
 ├── css/
-│   └── styles.css      # Styles (deep blue + white theme, business-tech style, responsive)
+│   ├── styles.css        # Readable stylesheet
+│   └── styles.min.css    # Minified stylesheet (used by index.html)
 ├── js/
-│   └── main.js         # Interactions (mobile nav toggle, smooth anchor scrolling)
-├── assets/
-│   └── images/         # Brand logos extracted from the company profile (dalicap/renesas/st/spsemi) + raw PPT images
-└── README.md           # This file
+│   ├── main.js           # Readable script
+│   └── main.min.js       # Minified script (used by index.html)
+├── assets/images/        # Original PPT-extracted images + brand logos (source, untouched)
+│   └── opt/              # Optimized WebP images used on the page
+├── sitemap.xml           # SEO sitemap
+├── robots.txt            # Crawler rules + sitemap pointer
+├── _headers              # Cache & security headers for static hosting
+└── README.md
 ```
 
-## Local Preview
+## Features (Oct 2026 optimization)
+1. **Visual design** — navy/cyan/gold gradient theme, hero image background,
+   hover lift cards, gradient brand wall, responsive grid layouts.
+2. **Content** — company profile, competitive advantages, service process (4 steps),
+   product lines with imagery, application gallery, applications, partners,
+   contact + online inquiry.
+3. **Functions** — product search filter, EN/中文 language switch (persisted),
+   online inquiry form (mailto draft), floating live-chat widget, image lightbox.
+4. **SEO** — meta description/keywords, Open Graph, Twitter Card, canonical,
+   JSON-LD (Organization + WebSite), sitemap.xml, robots.txt.
+5. **Performance** — images compressed to WebP (assets/images/opt), lazy loading,
+   minified CSS/JS, cache-control headers, single-file deployable.
 
-Double-click `index.html` to open it in a browser, or run:
-
-```
-python -m http.server 8080
-```
-
-Then visit `http://localhost:8080`.
-
-## Free Deployment Options (choose one)
-
-### Option 1: GitHub Pages (recommended)
-1. Sign up / log in to GitHub and create a new repository (e.g. `ystech-websit`)
-2. Upload all files of this project to the repository (`index.html` must be at the repository root)
-3. Repository `Settings` → `Pages` → `Source` select `main` branch → Save
-4. Wait 1-2 minutes, then visit `https://<username>.github.io/ystech-websit/`
-
-### Option 2: Cloudflare Pages
-1. Sign up / log in to Cloudflare → `Workers & Pages` → `Create application` → `Pages`
-2. Choose `Direct Upload` and drag all project files in
-3. After deployment you will get a free domain `https://<project-name>.pages.dev`
-
-### Option 3: Netlify Drop
-1. Open `https://app.netlify.com/drop`
-2. Drag the project folder into the page to get a free public URL
-
-## Before Going Live
-
-- Contact block: real info already filled in the `#contact` section (phone +86 755-33259928, fax +86 755-33259926, email sales@ystech-hk.com / bne563@gmail.com / David@ystech-hk.com, HK head office + Shenzhen sales office addresses, website www.ystech-hk.com, contact person Mr. Li Bin)
-- Product images: the "Product Gallery" still uses gradient placeholders - replace them with real product photos when available
-- Brand logos: Dalicap / Renesas / ST / SPSEMI logos extracted from the company profile are used in the "Brands" section; the remaining brands (TI / NXP / Murata / TDK) keep text placeholders - replace with official logo images if provided
-*（内容由AI生成，仅供参考）*
+## Deployment
+Upload all files preserving folder structure (index.html, css/, js/, assets/, sitemap.xml,
+robots.txt, _headers) to any static host (Cloudflare Pages / Netlify / nginx).
 *（内容由AI生成，仅供参考）*
