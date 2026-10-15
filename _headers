@@ -1,0 +1,19 @@
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# HTML: short cache, revalidate
+/index.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Images / CSS / JS: long cache
+/assets/*
+/css/*
+/js/*
+  Cache-Control: public, max-age=2592000, immutable
+
+# SEO static files
+/sitemap.xml
+/robots.txt
+  Cache-Control: public, max-age=3600
